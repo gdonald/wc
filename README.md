@@ -8,7 +8,7 @@ Counts characters, words, **numbers**, and lines.
 
 ### Usage
 
-Pass in text via stdin:
+Pass text in via stdin:
 
     cat wc.l | ./wc
 
