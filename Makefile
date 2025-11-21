@@ -1,7 +1,7 @@
 CC = clang
 FLEX = flex
 EXEC = wc
-FLAGS = -std=c17 -O2
+FLAGS = -std=c17 -O2 -D_POSIX_C_SOURCE=200809L
 
 ifeq ($(shell uname),Darwin)
 	LINKER = -ll
