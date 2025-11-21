@@ -15,5 +15,11 @@ $(EXEC): lex.yy.c
 lex.yy.c: wc.l
 	$(FLEX) wc.l
 
+test: $(EXEC)
+	chmod +x test.sh
+	./test.sh
+
 clean:
 	rm -f $(EXEC) lex.yy.c *~
+
+.PHONY: test clean
